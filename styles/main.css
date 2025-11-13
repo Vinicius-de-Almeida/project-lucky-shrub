@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Elms Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: white;
+}
+
+#intro-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 140px;
+}
+
+header.site-header {
+  background-color: #cdeb8e;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+}
+header.site-header > .logo img {
+  width: 93px;
+  display: block;
+  margin: 0;
+}
+@media (max-width: 720px) {
+  header.site-header {
+    padding: 1rem;
+    gap: 1rem;
+  }
+  header.site-header > .main-nav ul {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+nav.main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  text-align: center;
+  gap: 1rem;
+  margin: auto;
+}
+nav.main-nav a {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  text-decoration: none;
+  color: #006400;
+  font-weight: bold;
+  border: 2px solid #006400;
+  border-radius: 8px;
+  transition: transform 400ms ease;
+}
+nav.main-nav a:hover {
+  background-color: #006400;
+  color: white;
+  transform: translateY(-5px);
+}
+
+footer {
+  text-align: center;
+  padding: 12px 0;
+  margin-top: 3rem;
+}
+footer > .logofoot img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50px;
+  display: block;
+  height: auto;
+}
+
+.row-three {
+  display: flex;
+  margin-top: 3rem;
+  gap: 1.4rem;
+  flex-wrap: wrap;
+  border-radius: 1%;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.row-three > article {
+  flex: 1 1 calc(33.33% - 1.4rem);
+  padding: 1rem;
+  min-height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-contact {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.4rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.form-contact button {
+  color: #04AA6D;
+  background-color: #006400;
+  width: 4rem;
+  height: 2rem;
+}
+.form-contact button:hover {
+  color: white;
+  transform: translateY(-5px);
+  transition: transform 400ms ease;
+}
+
+@media (max-width: 720px) {
+  .row-three > article {
+    flex: 1 1 100%;
+    padding: 0.8rem;
+  }
+}
+.art {
+  max-width: 70%;
+  height: auto;
+  display: block;
+  margin-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-home .row-three > article {
+  background-color: #a5c956;
+}
+
+.pservices {
+  width: 70%;
+}
+
+.page-services .row-three > article {
+  background-color: #a1d54f;
+}
+
+.pabout {
+  max-width: 65ch;
+  width: 90%;
+}
+@media (max-width: 720px) {
+  .pabout {
+    width: 100%;
+  }
+}/*# sourceMappingURL=main.css.map */

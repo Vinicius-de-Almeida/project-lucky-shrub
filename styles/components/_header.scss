@@ -1,0 +1,53 @@
+@use '../base/variables' as vars;
+@use '../base/mixins' as m;
+
+header.site-header {
+  background-color: vars.$header-bg;
+  padding: 1rem 0;
+  @include m.colcenter; 
+  gap: 2.5rem;
+
+  > .logo img {
+    width: vars.$logo-width;
+    display: block;
+    margin: 0;
+  }
+
+  @media (max-width: 720px) {
+    padding: 1rem;
+    gap: 1rem;
+    > .main-nav ul {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+nav.main-nav {
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    text-align: center;
+    gap: 1rem;
+    margin: auto;
+  }
+  
+  a {
+    display: inline-block;
+    padding: .4rem .8rem;
+    text-decoration: none;
+    color: vars.$color-dark-green;
+    font-weight: bold;
+    border: 2px solid vars.$color-dark-green;
+    border-radius: vars.$radius;
+    transition: transform 400ms ease;
+
+    &:hover {
+      background-color: vars.$color-dark-green;
+      color: white;
+      transform: translateY(-5px);
+    }
+  }
+}

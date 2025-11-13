@@ -1,0 +1,50 @@
+@use '../base/variables' as vars;
+
+.row-three {
+  display: flex;
+  margin-top: 3rem;
+  gap: 1.4rem;
+  flex-wrap: wrap;
+  border-radius: 1%;
+  margin-left: 2rem;
+  margin-right: 2rem;
+
+  > article {
+    flex: 1 1 calc(33.33% - 1.4rem);
+    padding: 1rem;
+    min-height:auto;
+    border-radius: vars.$radius;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+}
+
+.form-contact {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.4rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  button {
+    color: #04AA6D;
+    background-color: vars.$color-dark-green;
+    width: 4rem;
+    height: 2rem;
+
+    &:hover {
+    color: white;
+    transform: translateY(-5px);
+    transition: transform 400ms ease;
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .row-three > article {
+    flex: 1 1 100%;
+    padding: 0.8rem;
+  }
+}
+

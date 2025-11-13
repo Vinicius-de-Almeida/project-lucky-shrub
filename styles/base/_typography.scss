@@ -1,0 +1,15 @@
+@use 'variables' as vars;
+@use 'mixins' as m;
+
+body {
+  font-family: vars.$font-family;
+  margin: 0;
+  padding: 0;
+  background: white;
+}
+
+#intro-title {
+  @include m.colcenter; 
+  text-align: center;
+  min-height: 140px;
+}

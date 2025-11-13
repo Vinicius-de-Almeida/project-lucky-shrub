@@ -1,0 +1,19 @@
+
+@use 'base/variables' as *;
+@use 'base/mixins' as *;
+
+// 3. BASE GERAL
+@use 'base/global';         
+@use 'base/typography';
+  
+
+// 4. COMPONENTS/LAYOUTS
+@use 'components/header';
+@use 'components/footer';
+@use 'components/layout'; 
+
+// 5. PÁGINAS
+@use 'pages/home'; 
+@use 'pages/services';
+@use 'pages/about';
+@use 'pages/contact';

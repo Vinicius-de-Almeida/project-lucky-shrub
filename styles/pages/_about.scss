@@ -1,0 +1,8 @@
+.pabout {
+    max-width: 65ch;
+    width: 90%; 
+    @media (max-width: 720px) {
+        width: 100%;
+    }
+}
+
