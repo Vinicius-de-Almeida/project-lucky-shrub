@@ -1,6 +1,6 @@
 # Lucky Shrub - Responsive Company Website
 
-![Lucky Shrub Homepage](logo.png)
+<img src="logo.png" alt="logo da Lucky Shrub" width="500"/>
 
 ## About The Project
 
