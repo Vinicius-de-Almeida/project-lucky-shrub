@@ -4,7 +4,7 @@
 
 ## About The Project
 
-This project is a responsive website for "Lucky Shrub," a fictional garden design company. The primary goal was to build a clean, professional, and fully responsive online presence using modern web development best practices. The site features a semantic HTML5 structure and is styled with SCSS for maintainability and advanced features. (This project is guided by Meta).
+This project is a responsive website for "Lucky Shrub," a fictional garden design company, developed as part of the Meta Front-End Developer Professional Certificate. The primary goal was to apply modern web development best practices to build a clean, professional, and fully responsive online presence. The site features a semantic HTML5 structure and is styled with SCSS for maintainability and advanced features.
 
 ## ✨ Key Features
 
