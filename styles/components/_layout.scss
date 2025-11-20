@@ -1,4 +1,5 @@
 @use '../base/variables' as vars;
+@use '../base/mixins' as m;
 
 .row-three {
   display: flex;
@@ -20,12 +21,10 @@
 }
 
 .form-contact {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
   margin-top: 1.4rem;
   margin-left: auto;
   margin-right: auto;
+  @include m.colcenter;
 
   button {
     color: #04AA6D;
@@ -70,8 +69,62 @@
   }
 }
 
+// Theme: Dark Mode Styles
+#theme-switch {
+      height: 3rem;
+      width: 3rem;
+      padding: 0;
+      border-radius: 50%;
+      background-color: whitesmoke;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      z-index: 3;
+    }
+    #theme-switch svg {
+      fill: black;
+    }
+    #theme-switch svg:last-child {
+      display: none;
+    }
+    .darkmode #theme-switch svg:first-child {
+      display: none;
+    }
+    .darkmode #theme-switch svg:last-child {
+      display: block;
+    }
+  
+   
+
+.darkmode {
+  header {
+    background-color: vars.$header-bg-variant;
+  }
+  main {
+    background-color: black;
+
+    h1, h2, h3, h4, h5, h6, p, a, li {
+      color: green;
+    }
+    .row-three {
+      background-color: black;
+      > article {
+        background-color: #300212;
+        color: green;
+      }
+    }
+  }
+  footer {
+    background-color: black;
+    color: white;
+  }
+}
 
 
+//Media Queries
 @media (max-width: 720px) {
   .row-three > article {
     flex: 1 1 100%;
