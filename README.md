@@ -4,7 +4,7 @@
 
 ## 🪴 Lucky Shrub Garden Design: Responsive Website Implementation
 
-This project is the corporate and fully responsive website for the fictional company "Lucky Shrub." It showcases proficiency in fundamental web technologies and best practices.
+This project is the corporate and fully responsive website for the company "Lucky Shrub." It showcases proficiency in fundamental web technologies and best practices.
 
 ## ✨ Key Technical Highlights
 
