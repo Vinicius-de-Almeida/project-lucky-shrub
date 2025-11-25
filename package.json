@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "sass styles/main.scss styles/styles.css --watch",
-    "build": "sass styles/main.scss styles/styles.css --style=compressed"
+    "build": "npx sass styles/main.scss styles/styles.css --style=compressed"
   },
   "keywords": [],
   "author": "Vinicius Carvalho de Almeida",
