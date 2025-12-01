@@ -27,3 +27,7 @@ Persistent Dark Mode: Implemented a theme toggle that uses Local Storage to save
 Client-Side Form Validation: Includes logic to validate form inputs, specifically checking for the @ symbol in email fields before submission.
 
 Objective: To deliver a professional, accessible, and high-performance Front-End solution using core web technologies.
+
+
+
+https://www.instagram.com/luckyshrubco/
