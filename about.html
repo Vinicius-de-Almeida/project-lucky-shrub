@@ -1,66 +1,103 @@
 <!DOCTYPE html>
 
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lucky Shrub</title>
+    <link rel="icon" type="image/png" href="logo.png" />
+    <meta
+      name="description"
+      content="Based in Tuscon, Arizona, Lucky Shrub is a medium-sized garden design firm"
+    />
+    <meta name="author" content="Vinicius Carvalho de Almeida / Lucky Shruby" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <script type="text/javascript" src="javascript/darkmode.js" defer></script>
 
-<head>
-     <meta charset="utf-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>  
-     <title>Lucky Shrub</title>   
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- DARKMODE -->
+    <script>
+      if (localStorage.getItem("darkmode") === "active") {
+        document.documentElement.classList.add("darkmode");
+      }
+    </script>
+  </head>
 
-     <meta name="description" content="Based in Tuscon, Arizona, Lucky Shrub is a medium-sized garden design firm">
-     <meta name="author" content="Vinicius Carvalho de Almeida / Lucky Shruby">
-     <link rel="stylesheet" href="styles/main.css">
-     <script type="text/javascript" src="javascript/darkmode.js" defer></script>
+  <body>
+    <header class="site-header">
+      <button id="theme-switch">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="24px"
+          viewBox="0 -960 960 960"
+          width="24px"
+          fill="#1f1f1f"
+        >
+          <path
+            d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"
+          />
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="24px"
+          viewBox="0 -960 960 960"
+          width="24px"
+          fill="#1f1f1f"
+        >
+          <path
+            d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"
+          />
+        </svg>
+      </button>
+      <div class="logo">
+        <img src="logo.png" alt="Lucky Shrub Logo" />
+      </div>
 
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-     <!-- DARKMODE -->
-        <script>
-            if (localStorage.getItem('darkmode') === 'active') {
-                document.documentElement.classList.add('darkmode');
-            }
-        </script>
-</head>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-<body>
-<header class="site-header">
-    <button id="theme-switch">
-        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>
-    </button>
-  <div class="logo">
-      <img src="logo.png" alt="Lucky Shrub Logo">
-  </div>
-
- <nav class="main-nav" aria-label="Main navigation">
-    <ul>
-        <li><a href="index.html">Home</a> </li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
- </nav>
-</header>
-
-
-<main>
-  <section>
-       <article id="intro-title">
+    <main>
+      <section>
+        <article id="intro-title">
           <h1>About Us</h1>
-          <p class="pabout">Based in Tuscon, Arizona, Lucky Shrub is a medium-sized garden design firm that specializes in garden design and creation, maintenance and landscaping. The company also runs a small plant nursery that sells indoor and outdoor plants, making them a one-stop shop for clients to "transform any space into an oasis you can be proud of".</p>
-          <p class="pabout">Lucky Shrub was started by a husband and wife team, Jason and Maria, who share a long-time love for plants. Jason is the garden architect. He creates and oversees all designs while managing his team of landscapers. Maria manages all the marketing for the company and oversees the nursery.</p>
-       </article>
-  </section>
-</main>
+          <p class="pabout">
+            Based in Tuscon, Arizona, Lucky Shrub is a medium-sized garden
+            design firm that specializes in garden design and creation,
+            maintenance and landscaping. The company also runs a small plant
+            nursery that sells indoor and outdoor plants, making them a one-stop
+            shop for clients to "transform any space into an oasis you can be
+            proud of".
+          </p>
+          <p class="pabout">
+            Lucky Shrub was started by a husband and wife team, Jason and Maria,
+            who share a long-time love for plants. Jason is the garden
+            architect. He creates and oversees all designs while managing his
+            team of landscapers. Maria manages all the marketing for the company
+            and oversees the nursery.
+          </p>
+        </article>
+      </section>
+    </main>
 
-<footer class="site-footer">
- <div class="logofoot">
-    <img src="logofoot.png" alt="Lucky Shrub small logo">
- </div>
- <div>
-    <p>© Lucky Shruby</p>
- </div>
-</footer>
-</body>
+    <footer class="site-footer">
+      <div class="logofoot">
+        <img src="logofoot.png" alt="Lucky Shrub small logo" />
+      </div>
+      <div>
+        <p>© Lucky Shruby</p>
+      </div>
+    </footer>
+  </body>
 </html>
